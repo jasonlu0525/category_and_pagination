@@ -32,7 +32,8 @@ export default defineStore('productStore', {
     getProducts(page = 1) {
       const api = `${import.meta.env.VITE_APP_API}/api/${import.meta.env.VITE_APP_PATH}/products?page=${page}`
       status.isLoading = true
-      axios.get(api).then((res) => {
+     axios.get(api).then((res) => {
+        console.log(res)
         this.products = res.data.products
         this.pagination = res.data.pagination
         status.isLoading = false
