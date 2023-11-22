@@ -31,7 +31,7 @@
         v-model="category"
         value="全部"
       />
-      <label class="btn btn-outline-primary" for="btnradio1" value="0">全部</label>
+      <label class="btn btn-outline-primary" for="btnradio1" >全部</label>
 
       <input
         type="radio"
@@ -42,7 +42,7 @@
         v-model="category"
         value="初階"
       />
-      <label class="btn btn-outline-primary" for="btnradio2" value="1">初階</label>
+      <label class="btn btn-outline-primary" for="btnradio2">初階</label>
 
       <input
         type="radio"
@@ -53,7 +53,7 @@
         v-model="category"
         value="中階"
       />
-      <label class="btn btn-outline-primary" for="btnradio3" value="2">中階</label>
+      <label class="btn btn-outline-primary" for="btnradio3" >中階</label>
       <input
         type="radio"
         class="btn-check"
@@ -63,7 +63,7 @@
         v-model="category"
         value="進階"
       />
-      <label class="btn btn-outline-primary" for="btnradio4" value="3">進階</label>
+      <label class="btn btn-outline-primary" for="btnradio4" >進階</label>
     </div>
     {{ category }}
     <div class="row g-4 pb-5">
