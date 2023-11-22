@@ -118,7 +118,9 @@ export default {
       const selectedProducts = this.sortProducts.filter((item) =>
         type !== '全部' ? item.category == type : item
       );
-      const total_pages = 10;//Math.ceil(selectedProducts.length / 10);
+
+      // 計算總頁數 ( 一頁 10 筆 )
+      const total_pages = Math.ceil(selectedProducts.length / 10);
 
       let selectedCategoryCollection = [];
       const defaultCurrentPage = 1;
@@ -129,7 +131,7 @@ export default {
       } else {
         console.log(selectedProducts);
 
-        // 計算總頁數 ( 一頁 10 筆 )
+
         for (let pageNum = 1; pageNum <= total_pages; pageNum++) {
           // 每 10 筆資料切割成一個陣列 ( 要注意 slice 是 shallow copy )
           // 0~ 9
